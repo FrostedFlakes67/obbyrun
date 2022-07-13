@@ -31,7 +31,7 @@ while done==false do
 end
 game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
-        syn.queue_on_teleport("wait(10) loadstring(game:HttpGet('https://raw.githubusercontent.com/FrostedFlakes67/obbyrun/main/load.lua',true))()")
+        syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/FrostedFlakes67/obbyrun/main/load.lua',true))()")
     end
 end)
 game:GetService("TeleportService"):Teleport(5434921173)
