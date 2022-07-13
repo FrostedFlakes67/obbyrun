@@ -1,3 +1,4 @@
+print("Loaded Obby Run autofarm by Trinco#0001")
 local lowest = 999999
 local done = false
 for _,v in pairs(game.Workspace.CurrentMap:GetChildren()) do
@@ -28,7 +29,7 @@ while done==false do
 end
 game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
-        syn.queue_on_teleport("wait(10) print('loaded') loadstring(game:HttpGet('https://raw.githubusercontent.com/FrostedFlakes67/obbyrun/main/fixed.lua',true))()")
+        syn.queue_on_teleport("wait(10) loadstring(game:HttpGet('https://raw.githubusercontent.com/FrostedFlakes67/obbyrun/main/fixed.lua',true))()")
     end
 end)
 game:GetService("TeleportService"):Teleport(5434921173)
