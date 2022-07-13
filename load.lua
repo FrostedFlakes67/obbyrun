@@ -1,5 +1,8 @@
 local lowest = 999999
 local done = false
+repeat
+    wait()
+until game.Workspace:FindFirstChild("CurrentMap")
 for _,v in pairs(game.Workspace.CurrentMap:GetChildren()) do
     if string.sub(v.Name,1,11) == "Checkpoint_" then
         if tonumber(string.sub(v.Name,12,#v.Name)) < lowest then
