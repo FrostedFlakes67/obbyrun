@@ -23,4 +23,4 @@ while done==false do
     end
 end
 game:GetService("TeleportService"):Teleport(5434921173)
-syn.queue_on_teleport("loadstring(game:GetHttp('https://raw.githubusercontent.com/FrostedFlakes67/obbyrun/main/load.lua',true))()")
+syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/FrostedFlakes67/obbyrun/main/load.lua',true))()")
