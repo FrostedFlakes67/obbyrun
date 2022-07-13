@@ -1,3 +1,6 @@
+repeat
+    wait()
+until game.Workspace:FindFirstChild("CurrentMap")
 local lowest = 999999
 local done = false
 for _,v in pairs(game.Workspace.CurrentMap:GetChildren()) do
@@ -16,7 +19,7 @@ while done==false do
         lastdone = lastdone+1
         wait(2.5)
     else
-        if game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.CurrentMap:FindFirstChild("Goal") then
+        if game.Workspace.CurrentMap:FindFirstChild("Goal") then
             firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.CurrentMap:FindFirstChild("Goal").Goal,0)
             wait()
             firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.CurrentMap:FindFirstChild("Goal").Goal,0)
