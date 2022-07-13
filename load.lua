@@ -19,10 +19,14 @@ while done==false do
         lastdone = lastdone+1
         wait(2.5)
     else
-        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.CurrentMap:FindFirstChild("Goal").Goal,0)
-        wait()
-        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.CurrentMap:FindFirstChild("Goal").Goal,0)
-        done = true
+        if game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.CurrentMap:FindFirstChild("Goal") then
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.CurrentMap:FindFirstChild("Goal").Goal,0)
+            wait()
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.CurrentMap:FindFirstChild("Goal").Goal,0)
+            done = true
+        else
+            done = true
+        end
     end
 end
 game:GetService("TeleportService"):Teleport(5434921173)
